@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="section.js"></script>
+  <script src="https://kit.fontawesome.com/3a07f06365.js" crossorigin="anonymous"></script>
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+  />
+</head>
+
+
+<script
+src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""
+></script>
+<style>
+
+
+.tablink.active {
+  background-color: gray;
+  color: white;
+}
+.tab-section {
+  display: none;
+}
+.tab-section.active {
+  display: block;
+}
+.sidebar .section li {
+  list-style: none;
+  cursor: pointer;
+  margin: 15px 0;
+}
+</style>
+
+<body>
+  <div class="main-item">
+    <div class="sidebar">
+<div class="photos">
+  <img src="portfoliobackground1.jpg" alt="" style="width: 120px; height: 120px;margin-left: 60px; margin-top: 50px; border-radius: 50%; border: 5px solid gray;">
+  <p style="font-size: 30px; color: white; margin-left: 50px;">Shubham Kolhe</p>
+  <li>
+    <i class="fa-brands fa-facebook"></i>
+  </li>
+  <li><i class="fa-brands fa-instagram"></i></li>
+  <li><i class="fa-brands fa-spotify"></i></li>
+  <li><i class="fa-brands fa-linkedin"></i></li>
+</div>
+<div class="section">
+  <li class="tablink active" onclick="openSection(event, 'home')"><i class="fa-solid fa-house"></i> Home</li>
+  <li class="tablink" onclick="openSection(event, 'about')"><i class="fa-solid fa-user"></i> About</li>
+  <li class="tablink" onclick="openSection(event, 'resume')"><i class="fa-solid fa-file"></i> Resume</li>
+  <li class="tablink" onclick="openSection(event, 'contact')"><i class="fa-solid fa-envelope"></i> Contact</li>
+</div>
+    </div>
+
+    
+  <div class="introduction">
+    <h2>I am shubham <br> frontend Developer</h2>
+ </div>
+</div>
+
+  </div>
+ 
+  <div class="About">
+    <li><h1>About</h1></li>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos <br>quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  </div>
+  
+  <div class="personalDetalis">
+  <div class="test"><img src="my-profile-img.jpg" alt=""></div>
+  <div class="B">
+    <h1>UI/UX Designer & Web Developer.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <div class="first">
+  <li><strong>Birthday:</strong>5 Nov 2001</li><br> 
+  <li><strong>Website:</strong>www.catalyst.com</li><br>
+  <li><strong>Phone:</strong>7666877591</li><br>
+  <li><strong>City:</strong>Karve Nagar Pune</li><br>
+</div>
+<div class="second">
+  <li><strong>Birthday:</strong>5 Nov 2001</li><br>
+  <li><strong>Website:</strong>www.catalyst.com</li><br>
+  <li><strong>Phone:</strong>7666877591</li><br>
+  <li><strong>City:</strong>Karve Nagar Pune</li><br>
+</div>
+<p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+  Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore.
+   Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia.
+    Sed et consectetur qui quia repellendus itaque neque.</p>
+
+  
+  </div>
+</div>
+
+
+<div class="Emojis">
+<div class="row1">
+  <li><i class="fa-solid fa-face-smile"></i></li>
+    <li><h1>100</h1></li>
+    <li><h4>Happy Clients</h4></li>
+    <li><h6>consequuntur quae</h6></li>
+
+  
+
+
+
+</div>
+<div class="row2">
+  <li><i class="fa-solid fa-user-lock"></i></li>
+  <li><h1>006</h1></li>
+  <li><p>Projects adipisci<br> atque cum quia<br> aut</p></li>
+ 
+</div>
+<div class="row3">
+  <li><i class="fa-solid fa-headphones"></i></li>
+  <li><h1>1453</h1></li>
+  <li><h4>Hours Of Support</h4></li>
+  <p>aut commodiquaert</p>
+</div>
+<div class="row4">
+  <li><i class="fa-solid fa-user"></i></li>
+  <li><h1>32</h1></li>
+  <li><h2>Hard Workers</h2></li>
+ <li> <p>retum asperiores <br>dolor</p></li>
+</div>
+</div>
+
+<div class="skills">
+  <div class="row">
+    <h1>Skills</h1>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  </div>
+</div>
+
+<div class="testings">
+  <div class="one">
+
+  <div class="progressbar">
+    <li>HTML</li>
+    <div class="progress-container1">
+      <div class="progress-bar"> 80% </div>
+    </div>
+
+    <div class="progressbar1">
+      <li>CSS</li>
+      <div class="progress-container1">
+        <div class="progress-bar1">75%</div>
+      </div>
+    </div>
+    <div class="progressbar2">
+      <li>javaScript</li>
+      <div class="progress-container1">
+        <div class="progress-bar2">80%</div>
+      </div>
+    </div>
+   
+  </div>
+</div>
+<div class="two">
+  <div class="progressbar3">
+    <li>React js</li>
+    <div class="progress-container3">
+      <div class="progress-bar3">65%</div>
+    </div>
+  </div>
+
+
+<div class="progressbar4">
+  <li>Nodejs</li>
+  <div class="progress-container3">
+    <div class="progress-bar4">50%</div>
+  </div>
+</div>
+<div class="progressbar5">
+  <li>PHP</li>
+  <div class="progress-container3">
+    <div class="progress-bar5">50%</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="resume-education">
+  <div class="resume">
+  <h1>Resume<hr></h1>
+  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+</div>
+<div class="row-A">
+  <h1>Summary</h1>
+  <p>•  Proficient in Java development with hands-on experience in object-oriented programming  principles and design patterns.<br><br>
+    •	Skilled in front-end technologies such as HTML, CSS, and JavaScript, alongside Java frameworks   like Spring and Hibernate.<br> <br>
+    •	Adept at designing, coding, debugging, and maintaining software applications with a focus on high-quality deliverables.<br> <br>
+    •	Strong analytical, problem-solving, and communication skills with a proven ability to work in cross-functional teams.<br> <br>
+    </p>
+   
+</div>
+<div class="row-B">
+  <h1>Education Details</h1>
+  <h2>Bachelor of Science. <br> 2019 -2022</h2>
+  <p>Sant Gadge Baba Amravti University ,Chikhli Buldana</p><br>
+  <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+ 
+</div>
+</div>
+</div>
+
+<footer>
+  <h1>Contact <hr></h1>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  <div class="Contact-1">
+    <div class="contact-a">
+    <div class="circle">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+      <h1>Address</h1>
+      <p>Karve Nagar pune-411052</p>
+      <div class="circle">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <h1>Call</h1>
+      <p>7666877591</p>
+
+    </div>
+
+    <div class="circle">
+      <i class="fa-solid fa-square-envelope"></i>
+    </div>
+    <h1 style="color: gray; margin-top: -40px;">Email</h1 >
+    <p>kolheshubham444@gmail.com</p>
+
+    <div id="map"></div>
+      <script>
+         var map = L.map("map").setView([18.4773555, 73.8948493], 13);
+         
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+               </script>
+
+    </div>
+
+  </div>
+
+
+  <div class="Contact-2">
+
+    <li><label>Your Name</label><br>
+      <input type="text" style="padding: 10px; margin: 7px; " ></li>
+    <li><label>Your Email</label></li>
+    <input type="email" style="padding: 10px; margin: 7px;">
+    <li style="margin-top: 30px;"><label> Mobile No</label><br>
+    <input type="text"  style="margin-top: 50px; padding: 10px; margin: 7px;"></li>
+    <li style="margin-top: 30px;"><label >Subject</label><br>
+    <input type="text" style=" padding: 10px; margin: 7px;"></li>
+    
+      <label >Message</label><br>
+    <textarea name="" id="">
+
+    </textarea>
+    
+    <button   style="padding: 15px; background-color: rgb(105, 105, 191); color: white; border: none; margin-left: 150px; width: 150px; border-radius: 12px;margin-top: 20px;" >Submit</button>
+    
+  </div>
+   
+ 
+
+</footer>
+
+
+
+
+</body>
+
+</html>

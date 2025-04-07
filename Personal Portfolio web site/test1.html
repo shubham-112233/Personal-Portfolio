@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab in html</title>
+  </head>
+  <style>
+    .tab {
+      background-color: lightgray;
+      border: 1px solid black;
+    }
+    .tab button {
+      background-color: inherit;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 14px 16px;
+      /* border-right: 1px solid gray; this command is used for right line of button text in navbar etc*/
+    }
+    .tabcontent {
+      padding: 6px 12px;
+      border: 1px solid peru;
+      
+      border-top: none;
+      display: none;
+    }
+    .tab button.active {
+      background-color: red;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="tab">
+      <button class="tablink" onclick="openbox(event,'but1')">but1</button>
+      <button class="tablink" onclick="openbox(event,'but2')">but2</button>
+      <button class="tablink" onclick="openbox(event,'but3')">but3</button>
+    </div>
+    <div class="tabcontent" id="but1"><h1>TabContaint1</h1></div>
+    <div class="tabcontent" id="but2"><h2>TabContaint2</h2></div>
+    <div class="tabcontent" id="but3"><h3>TabContaint3</h3></div>
+
+
+    
+    <script>
+      function openbox(evt, but) {
+        var i, tabcontent, tablink;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablink = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablink.length; i++) {
+          tablink[i].className = tablink[i].className.replace("active", "");
+        }
+        document.getElementById(but).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    
+  </body>
+</html>

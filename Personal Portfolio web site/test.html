@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Typing Animation</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: monospace;
+    }
+
+    .container {
+      font-size: 60px;
+      border-right: 4px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: 
+        typing1 3s steps(7) 0s forwards,
+        erase1 3s steps(7) 3s forwards,
+        typing2 3s steps(5) 6s forwards,
+        erase2 3s steps(5) 9s forwards;
+      animation-delay: 0s, 3s, 6s, 9s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes typing1 {
+      from { width: 0ch; content: "SHUBHAM"; }
+      to { width: 7ch; }
+    }
+
+    @keyframes erase1 {
+      from { width: 7ch; }
+      to { width: 0ch; }
+    }
+
+    @keyframes typing2 {
+      from { width: 0ch; }
+      to { width: 5ch; }
+    }
+
+    @keyframes erase2 {
+      from { width: 5ch; }
+      to { width: 0ch; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">SHUBHAMKOLHE</div>
+</body>
+</html>
